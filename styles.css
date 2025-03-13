@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #00f;
+    color: white;
+}
+
+.nav-left {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-right {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+}
+
+.cta-button {
+    padding: 1rem 2rem;
+    background-color: #00f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cta-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.8);
+}
+
+.overlay {
+    position: fixed;
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.overlay-content li {
+    padding: 10px 0;
+}
+
+.overlay-content li a {
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: color 0.3s, border-color 0.3s;
+}
+
+.overlay-content li a:hover {
+    color: #00f;
+    border-color: #00f;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 3rem;
+    color: red;
+    cursor: pointer;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.close-btn:hover {
+    transform: scale(1.2);
+    color: darkred;
+}
